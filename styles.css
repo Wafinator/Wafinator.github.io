@@ -1,0 +1,91 @@
+
+table, th, td { /*Initializing table with table height and table cell */
+border:1px solid black; /*line width, line style, line colour */
+}
+.center-links{  /*The Github and Linkedin Links */
+    text-align: center; /*Centers it on screen */
+}
+
+body { 
+    font-family: 'Lucida Console', monospace; /*Font name, font family */
+    line-height: 1.6; /*Space in between lines */
+    max-width: 800px; /*Max width of the body part of the website */
+    margin: 0 auto; /*length, percentage */
+    padding: 20px; /* 20px padding on all 4 sides*/
+    background-color: blanchedalmond;
+  }
+body table {
+  width: 100%;
+}
+
+h1 {
+  font-size: 45px;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  color: firebrick;
+  border-style: double; /* Double line border */
+  padding: 20px;
+}
+h2{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: sienna;
+  padding: 20px;
+}
+p {
+  color: orangered;
+  line-height: 40px;
+}
+.interest img{
+  margin-left: 30px; /* space between the left edge of an element and its surrounding elements */
+}
+.Realtime img{
+  margin-top: 10px; /* space between the top edge of an element and its surrounding elements */
+  margin-left: -190px; 
+  border-style:ridge; /*3D border style*/
+}
+.sky img{
+  margin-left: 60px;
+  border-style: ridge;
+}
+.notes img{
+  margin-left: -170px;
+  border-style:groove; /*3D border style*/
+}
+.a{
+  list-style-type: square; /*Square bullet points*/
+  padding-left: 80px;
+}
+.b{
+  list-style-type: upper-roman; /*Ordered list in roman numerals*/
+  padding-left: 80px;
+  margin-left: 10px;
+}
+.contacts{
+  margin-top: 80px;
+  border: 2px solid firebrick; /* line width, line style, line colour*/
+  border-radius: 5px;
+  padding: 0 50px;
+  padding-bottom: 20px;
+  background-color: peachpuff;   
+}
+.contacts h1{
+  font-size: 35px;
+}
+.contacts b{
+  font-size: 17px;
+  color:chocolate;
+}
+.contacts input[type=submit]{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: peachpuff;
+}
+.center-links a{
+  color: blue;
+}
+head{
+  background-color: aqua;
+}
+footer{
+  font-size: 15px;
+}
