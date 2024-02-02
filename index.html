@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        table, th, td {
-        border:1px solid black;
-        border-style:solid
-        }
-        .center-links{
-            text-align: center;
-        }
-     </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wafi Hassan | Welcome</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        </style>
+    <link rel="stylesheet" href="styles.css">
+
 </head> 
-<body style="background-color: blanchedalmond;">
-    <h1 style="font-size: 45px;"><center>Welcome to Wafi's Webpage</center></h1>
+<body>
+    <h1><center>Welcome to Wafi's Webpage</center></h1>
     <div class="center-links">
         <img src="github-mark.png" alt="Github" width="25" height="23"></img>
         <a href="https://github.com/Wafinator">GitHub</a>&nbsp&nbsp
@@ -32,7 +16,7 @@
         <a href="https://www.linkedin.com/in/whassan03/">LinkedIn</a>
     </div>
     <nav class="headers">
-        <table style="width: 100%;"><center style="font-size: 20px;">
+        <table><center style="font-size: 20px;">
             <tr>
                 <nav>
                     <ul>
@@ -70,11 +54,12 @@
                 <br><p><center>Here you'll find all about me, my skills and interests, and my projects</center></p</p>
             </section>
 
+            <div class="interest">
             <section id="interests">
                 <br></br>
                 <h1 style="font-size:35px;"><center>Interests</center></h1>
                 <h2>Hobbies</h2>
-                <ul style="font-size: 18px;">
+                <ul style="font-size: 18px;" class="a">
                     <li>Soccer</li><img src="bouncing-ball.gif" alt="Soccer ball bouncing" width="400" height="400"></img>
                     <li>League of Legends</li><img src="league.jpg" alt="League of Legends" width="500" height="400"></img>
                     <li>Driving</li>
@@ -84,7 +69,7 @@
                     <li>Studying History</li><img src="history.png" alt="History" width="500" height="400"></img>
                 </ul>
                 <br><h2>Programming Languages Proficiency</h2>
-                <ol>
+                <ol class="b">
                     <li>Java</li>
                     <li>Python</li>
                     <li>JavaScript</li>
@@ -92,9 +77,9 @@
                     <li>Assembly</li>
                     <li>Bash</li>
                   </ol>
-
-            
             </section>
+            </div>
+
             <section id="projects">
                 <br></br>
                 <h1 style="font-size: 35px;"><center>Projects</center></h1>
@@ -102,12 +87,16 @@
                      code, or mess around with the program yourself, I highly recommend visiting my <a href="https://github.com/Wafinator">Github</a>!</p>
                 <h2><br><br>Here are some of my Projects:</br></br></h2>    
                     <article>
+                    <div class="Realtime">
                     <h3>Realtime Chat Web Application</h3>
                     <p>Realtime Chat is a web application developed using node.js in the backend and React.js in the frontend. This application
                        uses ChatEngine.io and allows users to chat with each other in real-time. Users can send and receive messages/images from each other.
                        Currently supports up to 1000 different users! </p>
                     <img src="Realtime.png" alt="Realtime Screenshot" width="1275" height="738"></img>
                     </article>
+                    </div>
+
+                    <div class="sky">
                     <article>
                         <br></br>
                         <h3><br>Sky Palette</br></h3>
@@ -117,6 +106,9 @@
                         </p>
                         <img src="weather-application.png" alt="Weather application" width="555" height="700"></img>
                     </article>
+                    </div>
+
+                    <div class="notes">
                     <article>
                         <br></br>
                         <h3><br>NoteSwift</br></h3>
@@ -125,13 +117,14 @@
                         </p>
                         <img src="notesapp.png" alt="Notes App" width="1150" height="700"></img>
                     </article>
+                    </div>
             </section>
 
 
-            
+            <div class="contacts">
             <section id="contact">
                 <br></br>
-                <h1 style="font-size: 35px;"><center>Contact Me</center></h1>
+                <h1><center>Contact Me</center></h1>
                 <form action="#">
                     <b><label for="fname"></label>Name:</label></b><br>
                     <input type="text" id="name" name="name"><br><br>
@@ -150,8 +143,10 @@
                 </form>
                 
             </section>
-            <footer style="font-size: 15px;">
-                <p st><br><br><br>Copyright &copy; 2024 Wafi Hassan</p>
+            </div>
+
+            <footer>
+                <p ><br><br><br>Copyright &copy; 2024 Wafi Hassan</p>
             </footer>
         </body>
     </nav>
