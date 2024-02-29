@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wafi Hassan | Welcome</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 
 </head> 
 <body>
+    
+    <div class="button-container">
+    </br>
+        <button onclick="changeBackgroundColour()">Change Background Colour</button>
+        <button onclick="toggleVisibility()">Toggle Visibility</button>
+    </div>
+
+    
     <h1><center>Welcome to Wafi's Webpage</center></h1>
     <div class="center-links">
         <img src="github-mark.png" alt="Github" width="25" height="23"></img>
@@ -119,17 +129,30 @@
                     </article>
                     </div>
             </section>
+            <br><br>
+
+            <section id="image-slider">
+                <h1><center>Image Slider</center></h1>
+                <div class="slider-container">
+                    <img id="slider-image" src="image1.jpg" alt="Image 1">
+                    <div id="caption">Caption 1</div>
+                    
+                    
+                </div>
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </section>
 
 
             <div class="contacts">
             <section id="contact">
                 <br></br>
                 <h1><center>Contact Me</center></h1>
-                <form action="#">
+                <form action="#" onsubmit="return validateForm()">
                     <b><label for="fname"></label>Name:</label></b><br>
-                    <input type="text" id="name" name="name"><br><br>
+                    <input type="text" id="name" name="name" required><br><br>
                     <b>Email:</b><br>
-                    <input type="text" id="email" name="email"><br><br>
+                    <input type="text" id="email" name="email" required><br><br>
                     <br><b>How did you feel about my webpage?</b><br><!-- Creating a 1 answer question-->
                     <input type="radio" id="good" name="website_quality" value="Awesome!" />
                     <label for="good">Very Well</label><br />
@@ -138,7 +161,7 @@
                     <input type="radio" id="bad" name="website_quality" value="Horrible" />
                     <label for="bad">Bad</label><br /><br>
                     <b>Comments/Concerns?</b><br></br>
-                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+                    <textarea rows="4" cols="50" id="comment" name="comment" form="usrform" required></textarea>
                     <br><input type="submit" value="Submit">
                 </form>
                 
@@ -146,7 +169,7 @@
             </div>
 
             <footer>
-                <p ><br><br><br>Copyright &copy; 2024 Wafi Hassan</p>
+                <p ><br><br>Copyright &copy; 2024 Wafi Hassan</p>
             </footer>
         </body>
     </nav>
